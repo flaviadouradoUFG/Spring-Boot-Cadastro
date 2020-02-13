@@ -1,4 +1,4 @@
-package com.ufg.cadastro;
+package com.ufg.Cadastro;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

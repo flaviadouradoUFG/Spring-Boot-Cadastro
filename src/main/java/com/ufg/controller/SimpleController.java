@@ -2,21 +2,25 @@ package com.ufg.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
+
 import org.springframework.ui.Model;
-import org.springframework.context.annotation.PropertySource;
-import org.springframework.context.annotation.Configuration;
 
+import org.springframework.web.bind.annotation.GetMapping;
 
-@Configuration
-@PropertySource(value="classpath:application.properties")
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 @Controller
 public class SimpleController {
+    private static final Logger LOGGER = LoggerFactory.getLogger(SimpleController.class);
 
     @Value("${spring.application.name}")
     String appName;
 
-    public String homePage(Model model) {
+    @GetMapping("/")
+    public String main(Model model) {
         model.addAttribute("appName", appName);
-        return "index";
+        LOGGER.info("------> APPNAME: " + appName);
+        return "index"; // view
     }
 }
