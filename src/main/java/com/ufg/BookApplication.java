@@ -8,8 +8,9 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EnableJpaRepositories("com.ufg.data")
 @EntityScan("com.ufg.model")
 @SpringBootApplication
-public class CadastroApplication {
+
+public class BookApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(CadastroApplication.class, args);
+		SpringApplication.run(BookApplication.class, args);
 	}
 }

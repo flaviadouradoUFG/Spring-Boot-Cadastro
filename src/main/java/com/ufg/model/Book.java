@@ -8,7 +8,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Table;
 import java.io.Serializable;
 
-
 @Entity
 @Table
 public class Book implements Serializable {
