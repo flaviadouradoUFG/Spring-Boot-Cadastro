@@ -1,0 +1,23 @@
+﻿insert into Aluno(aluno_id, nome, matricula) values(1, 'Marcelo J', 
+'1010');
+insert into Aluno(aluno_id, nome, matricula) values(2, 'Caio', 
+'1020');
+insert into Aluno(aluno_id, nome, matricula) values(3, 'Marcelo M', 
+'1030');
+insert into Aluno(aluno_id, nome, matricula) values(4, 'Pedro', 
+'1040');
+insert into Aluno(aluno_id, nome, matricula) values(5, 'Rodrigo', 
+'1050');
+insert into Aluno(aluno_id, nome, matricula) values(6, 'Lucas', 
+'1060');
+
+
+
+
+
+insert into Livros(book_id, title, author, aluno_id) values (1, "A Divina Comédia", "Dante Alighieri", 1);
+insert into Livros(book_id, title, author, aluno_id) values (2, "Pai contra mãe", "Machado de Assis", 1);
+insert into Livros(book_id, title, author, aluno_id) values (3, "A cartomante", "Machado de Assis", 2);
+insert into Livros(book_id, title, author, aluno_id) values (4, "Cancioneiro", "Fernando Pessoa", 2);
+insert into Livros(book_id, title, author, aluno_id) values (5, "Livro do Desassossego", "Fernando Pessoa", 3);
+insert into Livros(book_id, title, author, aluno_id) values (6, "O alienista", "Machado de Assis", 1);

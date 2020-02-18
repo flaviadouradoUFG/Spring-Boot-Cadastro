@@ -1,22 +1,17 @@
 package com.ufg.model;
 
-import javax.persistence.Id;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
 @Table
-public class Book implements Serializable {
+public class Livros implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    private long book_id;
 
     @Column
     private String title;
@@ -24,23 +19,23 @@ public class Book implements Serializable {
     @Column
     private String author;
 
-    public Book() {
+    public Livros() {
     }
 
     //Constructors
-    public Book(long id, String title, String author) {
-        this.id = id;
+    public Livros(long id, String title, String author) {
+        this.book_id = id;
         this.title = title;
         this.author=author;
     }
 
     //Getters and Setters
     public long getId() {
-        return id;
+        return book_id;
     }
 
     public void setId(long id) {
-        this.id = id;
+        this.book_id = id;
     }
 
     public String getTitle() {
@@ -59,12 +54,11 @@ public class Book implements Serializable {
         this.author = author;
     }
 
-
     //ToString
     @Override
     public String toString() {
         return "Book{" +
-                "id=" + id +
+                "book_id=" + book_id +
                 ", title='" + title + '\'' +
                 ", author='" + author + '\'' +
                 '}';

@@ -5,12 +5,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-@EnableJpaRepositories("com.ufg.data")
+@EnableJpaRepositories("com.ufg.repository")
 @EntityScan("com.ufg.model")
 @SpringBootApplication
 
-public class BookApplication {
+public class LivrosApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(BookApplication.class, args);
+		SpringApplication.run(LivrosApplication.class, args);
 	}
 }

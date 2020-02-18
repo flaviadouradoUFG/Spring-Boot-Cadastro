@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/books") //Mapeando endpoint
-public class BookController {
+public class LivrosController {
 
-    static final Logger logger = LoggerFactory.getLogger(BookController.class);
+    static final Logger logger = LoggerFactory.getLogger(LivrosController.class);
 
 }
